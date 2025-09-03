@@ -37,24 +37,26 @@ if (idade >= 18) {
 //*Se <= 0 faça
 //* Escreva negativo
 //?? Numero isolado
-/*let num = prompt("Digite um numero interiro (Z)")
-let sinal = "-"
-
-if (sinal) {
+let num = prompt("Digite um numero interiro (Z)")
+let resultado = num
+if (resultado === "i" + num) {
     console.log("Negativo")
     alert("Negativo")
 } else {
     console.log("Positivo")
     alert("Positivo")
-}*/
+}
 
 //?? Opercações
-/*if (num > 0) {
-    console.log("Positivo")
-    alert("Positivo")
+/*let num1 = prompt("Digite um numero")
+let num2 = prompt("Digite segundo numero")
+let resultado = num1 - num2
+if (resultado > 0) {
+    console.log(num1 + " - " + num2 + " é " + resultado + ". É Positivo")
+    alert(num1 + " - " + num2 + " é " + resultado + ". É Positivo")
 } else if (num <= 0) {
-    console.log("Positivo")
-    alert("Positivo")
+    console.log(num1 + " - " + num2 + " é " + resultado + ". É Negativo")
+    alert(num1 + " - " + num2 + " é " + resultado + ". É Negativo")
 }*/
 
 //! Exercicio 3
