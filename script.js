@@ -37,15 +37,15 @@ if (idade >= 18) {
 //*Se <= 0 faça
 //* Escreva negativo
 //?? Numero isolado
-let num = prompt("Digite um numero interiro (Z)")
-let resultado = num
-if (resultado === "i" + num) {
+/*let num = prompt("Digite um numero interiro (Z)")
+
+if (num <= 0) {
     console.log("Negativo")
     alert("Negativo")
-} else {
+} else if(num > 0) {
     console.log("Positivo")
     alert("Positivo")
-}
+}*/
 
 //?? Opercações
 /*let num1 = prompt("Digite um numero")
@@ -54,9 +54,9 @@ let resultado = num1 - num2
 if (resultado > 0) {
     console.log(num1 + " - " + num2 + " é " + resultado + ". É Positivo")
     alert(num1 + " - " + num2 + " é " + resultado + ". É Positivo")
-} else if (num <= 0) {
-    console.log(num1 + " - " + num2 + " é " + resultado + ". É Negativo")
-    alert(num1 + " - " + num2 + " é " + resultado + ". É Negativo")
+} else if (resultado <= 0) {
+    console.log("É Negativo")
+    alert("É Negativo")
 }*/
 
 //! Exercicio 3
@@ -80,6 +80,7 @@ if (nota > 100) {
 //! Exercicio 4
 //* Verificar se é positivo ou negativo
 //* Se é maior 0 é positivo, se menor, não é
+//* Se zero, informar
 //* Usuario insere valor, logica com if else
 //* 
 //*Usuario digita numero
@@ -91,21 +92,82 @@ if (nota > 100) {
 //* Escreva negativo
 //?? Numero isolado
 /*let num = prompt("Digite um numero interiro (Z)")
-let sinal = "-"
 
-if (sinal) {
+if (num < 0) {
     console.log("Negativo")
     alert("Negativo")
-} else {
+} else if(num > 0) {
     console.log("Positivo")
     alert("Positivo")
-}
+} else if(num = 0) {
+    console.log("O resultado é zero")
+    alert("O resultado é zero")
+}*/
 
 //?? Opercações
-if (num > 0) {
-    console.log("Positivo")
-    alert("Positivo")
-} else if (num <= 0) {
-    console.log("Positivo")
-    alert("Positivo")
+/*let num1 = prompt("Digite um numero")
+let num2 = prompt("Digite segundo numero")
+let resultado = num1 - num2
+if (resultado > 0) {
+    console.log(num1 + " - " + num2 + " é " + resultado + ". É Positivo")
+    alert(num1 + " - " + num2 + " é " + resultado + ". É Positivo")
+} else if (resultado < 0) {
+    console.log("É Negativo")
+    alert("É Negativo")
+}  else if(num = 0) {
+    console.log("O resultado é zero")
+    alert("O resultado é zero")
 }*/
+
+//! Exercicio 5
+//* Usuario digita idade
+//* Logica: condições
+//* SE idade > 0 E idade < 12
+//*     Escreve: Crianca
+//* Se > 14 E < 17
+//*     Adolescente
+//* >= 18
+//*     Adulto
+//* Se nenhum --> Invalido
+
+/*let idade = prompt("Digite a idade: ")
+
+if (idade > 0 && idade < 12) {
+    alert("Criança")
+    console.log("Criança")
+} else if (idade > 14 && idade < 17) {
+    alert("Adolescente")
+    console.log("Adolescente")
+} else if (idade > 18) {
+    alert("Adulto")
+    console.log("Adulto")
+} else {
+    alert("Idade invalida")
+    console.log("Idade invalida")
+}*/
+
+//! Exercicio 6
+/*let num = prompt("Digite um numero")
+
+if (num % 2 == 1) {
+    alert("Impar")
+    console.log()
+} else if (num % 2 == 0) {
+    alert("Par")
+    console.log()
+}*/
+
+//!########## INTERMEDIARIO ####################
+//! Exercicio 1
+//* Calculadora
+
+let num1 = prompt("Digite o primeiro numero")
+let num2 = prompt("Digite o segundo numero")
+let operacao = prompt("Digite a operação")
+let resultado = 0
+
+switch (operacao) {
+    case "+": 
+    resultado = num1 + num2
+    alert(resultado);
+}
